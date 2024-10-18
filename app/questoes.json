@@ -1,0 +1,12 @@
+[
+    {
+      "pergunta": "Qual é a capital do Brasil?",
+      "alternativas": ["Rio de Janeiro", "São Paulo", "Brasília", "Salvador"],
+      "resposta_correta": 2
+    },
+    {
+      "pergunta": "Em que ano o Brasil foi descoberto?",
+      "alternativas": ["1492", "1500", "1532", "1822"],
+      "resposta_correta": 1
+    }
+  ]
