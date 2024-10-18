@@ -1,5 +1,10 @@
 import tkinter as tk
 from tkinter import messagebox
+from carregar_questoes import carregar_questoes
+
+# Agora você pode usar a função para carregar o CSV
+questoes = carregar_questoes('questoes.csv')
+
 
 class EstudoConcursoApp:
     def __init__(self, master, questoes):

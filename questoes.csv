@@ -1,0 +1,27 @@
+import csv
+
+# Questão a ser adicionada
+nova_questao = {
+    'Pergunta': 'Na análise dos impactos do processo de urbanização, são características do meio antrópico a serem consideradas, exceto:',
+    'Alternativa1': 'aspectos demográficos',
+    'Alternativa2': 'infraestrutura existente',
+    'Alternativa3': 'comunicação e transporte',
+    'Alternativa4': 'habitação',
+    'Alternativa5': 'ambiente natural',
+    'Resposta Correta': 'ambiente natural',
+    'Explicação': 'O meio antrópico inclui aspectos demográficos, infraestrutura, comunicação, transporte, habitação, mas não o ambiente natural, que é parte do meio físico e biológico.',
+    'Categoria': 'Urbanização'
+}
+
+# Nome do arquivo CSV
+arquivo_csv = 'questoes.csv'
+
+# Adicionar a questão ao arquivo CSV
+with open(arquivo_csv, mode='a', newline='', encoding='utf-8') as file:
+    fieldnames = ['Pergunta', 'Alternativa1', 'Alternativa2', 'Alternativa3', 'Alternativa4', 'Alternativa5', 'Resposta Correta', 'Explicação', 'Categoria']
+    writer = csv.DictWriter(file, fieldnames=fieldnames)
+    
+    # Escreve a questão
+    writer.writerow(nova_questao)
+
+print("Questão adicionada com sucesso!")
